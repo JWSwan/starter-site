@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<title>Meet Jude</title>
+	<style>
+		body{
+			text-align:center;
+			max-width:95%;
+			margin:auto;
+			}
+		
+		
+		.profile {
+			width:25%;
+			height:25%;
+			border-radius:100px;
+			margin-bottom: 100px;
+			margin-top: 80px;
+		}
+		
+		#aboutBG {
+			position:fixed;
+			z-index:-1;
+			right: 0;
+			bottom: 0;
+			width:auto;
+			height:auto;
+			filter:blur(5px) opacity(50%);
+		}
+		
+		#name{
+			width:200px;
+			height:18px;
+		}
+		
+		#email{
+			width:200px;
+			height:18px;
+		}
+		
+		#message{
+			font-size:15px;
+		}
+		
+		#submit {
+			font-size:20px;
+			margin-top:40px;
+		}
+		
+		
+		.row {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+		
+		.column {
+			flex: 50%;
+			padding: 10px 20px 10px 20px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+			line-height: 30px;
+		}
+			
+			
+		a {
+			margin: 0 4px 70px 4px;
+			color:black;
+			font-size:20px;
+		}
+		
+		.contact {
+			margin-bottom: 200px;
+			font-size:20px;
+			font-family: Arial, Helvetica, serif;
+		}
+			
+	</style>
+</head>
+<body>
+
+<!-- Background -->
+
+	<img id="aboutBG" src="img/aboutBG-1.jpg">
+
+<!--Header-->
+	<img src="Name-Title.png" style="filter:brightness(75%) drop-shadow(10px 10px 8px black);"> <br>
+			
+	<div>
+		<!--Navigation Bar-->
+		<a href="index.html"> Home </a> 
+		<a> | </a>
+		<a href="game.html"> Play a Game </a> 
+		<a> | </a>
+		<a href="gallery2.html"> Feast your eyes </a> 
+		<a> | </a>
+		<a href="https://sacrumterrum.home.blog/posts/"> Check out My Blog</a>
+		<a> | </a>		
+		<a href="contact.html"> Meet Jude </a> 
+	</div>	
+	
+<!--Content-->
+	<img src="img/profile2.jpg" style="width:10%; height:10%; padding-right:-15px; transform:rotate(-20deg); border-radius:15px; margin-bottom: 100px;">
+	<img class=profile src="img/profile1.jpg">
+	<img src="img/profile3.jpg" style="width:10%; height:10%; padding-right:-15px; transform:rotate(20deg); border-radius:15px; margin-bottom: 100px;">
+	
+<!--Description-->
+
+	<div class=row>
+		<div class=column>
+		<p>
+		The internet used to be quite a utilitarian place. First developed as a tool for the military, it made its way into civilian society and
+		largely retained its character as a simply a place to store and transmit information. The World Wide Web was, at heart, an information dump 
+		so you didn't have to physically travel somewhere or call someone to get information. Anything like styling, imagery, typography, or design
+		were superfluous add-ons equivalent to a flashy advertising scheme.
+		</p>
+	
+		<h4>
+		But, that's not the way it is anymore.
+		</h4>
+		
+		<p>
+		Slowly, the human element was introduced to the Web. Website creators began to actually care about what the user experience was like. Is it easy to navigate? Can you find what you're looking for? Overall, is it generally an enjoyable place to be? Think of the interior of a car.
+		</p>
+		</div>
+		
+		<div class=column>
+		<p>
+		All you <em> need </em>
+		is a steering wheel and a couple pedals and the car technically 'works' - but people want to feel like they have something that was created with them in mind. 
+		If you had to spend hours in that car, would you hate it? Are all the dials and knobs where you expect them to be, and do what you expect them to do? The icons
+		should be easily understandable and numbers easily readable. Even things like the shape of the speedometer and the feel of the door handle matters. 
+		</p>
+	
+		<p>
+		Websites are much the same way, which is why the human element is so important. I believe in narrative website design, where the experience online
+		conveys an innate understanding of the purpose of the website. All the parts should come together as a cohesive whole. You should be able to tell, intuitively,
+		that you're looking at a blog, or a recipe site, or a social media feed, or online store. 	Nowadays, the internet is more than just a tool, it's a place to <em> be </em>. 
+		</p>
+		</div>
+		
+	</div>
+	
+	<div class=contact>
+	<h2> Feel free to reach out! </h2>
+		<label for="name"> Your Name: </label>
+		<input type="text" id="name" name="name">
+		<br><br>
+		
+		<label for="email"> Your email: </label>
+		<input type="text" id="email" name="email">
+		<br> <br>
+		
+		<label for="message"> Your message: </label>
+		<textarea type="text" id="message" name="message" rows="4" columns="200" placeholder="What can I do for you?">
+		</textarea>
+		<br>
+		
+		<input type="submit" id="submit">
+	
+	</div>
+		
+
+
+
+</body> 
+
+</html>

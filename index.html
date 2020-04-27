@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<title>issa website</title>
+	<style>
+		body{
+			max-width:95%;
+			margin:auto;
+			text-align:center;
+		}	
+		
+		
+		div h2 {
+				padding-top:0px;
+		}
+		
+		#videoBG {
+			position:fixed;
+			z-index:-1;
+			right: 0;
+			bottom: 0;
+			min-width:100%;
+			min-height:100%;
+		}
+			
+		@media (min-aspect-ratio: 16/9){
+			#videoBG {
+				width:100%;
+				heigh: auto;
+			}
+		}
+		
+		@media (max-aspect-ratio: 16/9){
+			#videoBG {
+				width:auto;
+				heigh:100%;
+			}
+		}
+		
+		
+		a {
+			margin: 40px 4px 70px 4px;
+			color:white;
+			font-size:20px;
+			filter:drop-shadow(3px 3px 4px black);
+		}
+		
+		.navBar {
+			position:absolute;
+			top:330px;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			text-align: center;
+		}
+		
+				
+		.buttons button {
+		background:none;
+		border:0;
+		outline: 0;
+		cursor: pointer;
+		margin-bottom:35px;
+		}
+
+		.buttons button:before {
+		content:"\f144";
+		font-family: "Font Awesome 5 Free";
+		width:70px;
+		height:70px;
+		display:inline-block;
+		font-size:68px;
+		color: #fff;
+		filter:opacity(80%);
+		}
+		
+		.buttons button.play:before {
+		content:"\f144";
+		}
+		
+		.buttons button.pause:before {
+		content:"\f28b";
+		}
+			
+		#songTitle {
+		color:white;
+		background-color:black;
+		margin:-20px 0 0 -40px;
+		width:auto;
+		}
+	</style>
+	
+	<script src="https://kit.fontawesome.com/961e0b7e19.js" crossorigin="anonymous"></script>
+	
+	<script>
+
+	function playPause(btn, vid){
+		var vid = document.getElementById(vid);
+		var songTitle = document.getElementById("songTitle");
+		var music = document.getElementById("music");
+		
+		if(vid.paused){
+			vid.play();
+			music.play();
+			btn.className = "pause";
+		} else {
+			vid.pause();
+			music.pause();
+			btn.className = "play";
+			}
+	}
+	</script>
+</head>
+<body>
+
+<!-- background -->
+		<video id="videoBG" poster="img/poster.jpg" loop>
+            <source src="img/footage2.mp4" type="video/mp4">
+        </video>
+		<audio id="music" loop>
+			<source src="ODESZA.mp3" type="audio/mpeg">
+		</audio>
+		
+<!--Header-->
+	
+	
+		<!-- MEDIA PLAYER -->
+		<img class="nameTitle" src="Name-Title.png" style="filter:drop-shadow(8px 8px 5px black);"> <br>
+		
+		<div  class="buttons">
+			<button id="playPauseButton" onclick="playPause(this, 'videoBG')"></button>
+		</div>
+
+		
+		<!--Navigation Bar-->
+	<div class="navBar">	
+		<a href="index.html"> Home </a> 
+		<a> | </a>
+		<a href="game.html"> Play a Game </a> 
+		<a> | </a>
+		<a href="gallery2.html"> Feast your eyes </a> 
+		<a> | </a>
+		<a href="https://sacrumterrum.home.blog/posts/"> Check out My Blog</a>
+		<a> | </a>		
+		<a href="contact.html"> Meet Jude </a> 
+	</div>
+	
+
+	
+<!--Content-->
+	<div>
+			
+		<h2 style="color:white; position:absolute; bottom:50px; text-align:left; margin:auto; font-size:24px;">If you have any trouble while you're here, please <br>
+		<a href="contact.html" style="color:white; font-size:24px;"> get in touch with me</a> and let me know!</h2>
+		
+	</div>
+	
+		
+</body> 
+
+</html>
