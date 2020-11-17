@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<title>Meet Jude</title>
+	<style>
+		body{
+			text-align:center;
+			max-width:95%;
+			margin:auto;
+			}
+		
+		
+		.profile {
+			width:25%;
+			height:25%;
+			border-radius:100px;
+			margin-bottom: 100px;
+			margin-top: 80px;
+		}
+		
+		#aboutBG {
+			position:fixed;
+			z-index:-1;
+			right: 0;
+			bottom: 0;
+			width:100%;
+			height:100%;
+			filter:blur(5px) opacity(50%);
+		}
+		
+		
+		form {
+			margin-top:50px;
+		}
+		
+		.form-control
+			{
+			width: 400px;
+			background: transparent;
+			border:none;
+			outline:none;
+			border-bottom: 1px solid black;
+			font-size: 18px;
+			margin-bottom: 16px;
+			}
+		
+		form .submit{
+			background: lightGray;
+			border:solid 1px black;
+			font-size: 20px;
+			font-weight:bold;
+			height:50px;
+			width:100px;
+			letter-spacing:2px;
+			}
+		
+		
+		.row {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+		
+		.column {
+			flex: 50%;
+			padding: 10px 20px 10px 20px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+			line-height: 30px;
+		}
+			
+			
+		a {
+			margin: 0 4px 70px 4px;
+			color:black;
+			font-size:20px;
+		}
+		
+		.contact {
+			margin-bottom: 30px;
+			margin-top: 50px;
+			font-size:20px;
+			font-family: Arial, Helvetica, serif;
+		}
+			
+	</style>
+	
+	<script>
+		function Alert() {
+			alert("Thanks for Reaching out!");
+		}
+	</script>
+</head>
+<body>
+
+<!-- Background -->
+
+	<img id="aboutBG" src="img/aboutBG.jpg">
+
+<!--Header-->
+	<img src="Name-Title.png" style="filter:drop-shadow(10px 10px 8px black); width:50%;"> <br>
+			
+	<div>
+		<!--Navigation Bar-->
+		<a href="index.html"> Home </a> 
+		<a> | </a>
+		<a href="game.html"> Play a Game </a> 
+		<a> | </a>
+		<a href="gallery2.html"> Feast your eyes </a> 
+		<a> | </a>
+		<a href="https://sacrumterrum.home.blog/posts/"> Check out My Blog</a>
+		<a> | </a>		
+		<a href="contact.html"> Meet Jude </a> 
+	</div>	
+	
+
+	
+	
+<!--Content-->
+	<img src="img/profile2.jpg" style="width:10%; height:10%; padding-right:-15px; transform:rotate(-20deg); border-radius:15px; margin-bottom: 100px;">
+	<img class="profile" src="img/profile1.jpg"> 
+	<img src="img/profile3.jpg" style="width:10%; height:10%; padding-right:-15px; transform:rotate(20deg); border-radius:15px; margin-bottom: 100px;">
+	
+<!--Description-->
+
+	<div class="row">
+		<div class="column">
+		<p>
+		The internet used to be quite a utilitarian place. First developed as a tool for the military, it made its way into civilian society and
+		largely retained its character as simply a place to store and transmit information. The World Wide Web was, at heart, an information dump 
+		so you didn't have to physically travel somewhere or call someone to get information. Anything like styling, imagery, typography, or design
+		were superfluous add-ons equivalent to a flashy advertising scheme.
+		</p>
+	
+		<h4>
+		But, that's not the way it is anymore.
+		</h4>
+		
+		<p>
+		Slowly, the human element was introduced to the Web. Website creators began to actually care about what the user experience was like. Is it easy to navigate? Can you find what you're looking for? Overall, is it generally an enjoyable place to be? Think of the interior of a car.
+		</p>
+		</div>
+		
+		<div class="column">
+		<p>
+		All you <em> need </em>
+		is a steering wheel and a couple pedals and the car technically 'works' - but people want to feel like they have something that was created with them in mind. 
+		If you had to spend hours in that car, would you hate it? Are all the dials and knobs where you expect them to be, and do what you expect them to do? The icons
+		should be easily understandable and numbers easily readable. Even things like the shape of the speedometer and the feel of the door handle matters. 
+		</p>
+	
+		<p>
+		Websites are much the same way, which is why the human element is so important. I believe in narrative website design, where the experience online
+		conveys an innate understanding of the purpose of the website. All the parts should come together as a cohesive whole. You should be able to tell, intuitively,
+		that you're looking at a blog, or a recipe site, or a social media feed, or online store. 	Nowadays, the internet is more than just a tool, it's a place to <em> be </em>. 
+		</p>
+		</div>
+		
+	</div>
+	
+	<a name="contactForm"></a>
+	<div class="contact" id="contactForm">
+	<h2> Feel free to reach out! </h2>
+	  <form action="contact.php"   method="post">
+
+		<input type="text" class="form-control" name="name" placeholder="Your name" required="" oninvalid="this.setCustomValidity('Please Enter your name')"
+ oninput="setCustomValidity('')">
+		<br><br>
+		
+
+		<input type="email" class="form-control" name="email" placeholder="Your email" required="" oninvalid="this.setCustomValidity('Please Enter valid email')"
+ oninput="setCustomValidity('')">
+		<br> <br>
+		
+
+		<textarea class="form-control" name="message" placeholder = "Your message (max 500 characters)" maxlength="500" style="font-family: Arial, Helvetica, serif";></textarea>
+		
+		<br>
+		
+		<input type="submit"  class="form-control submit" onClick="Alert()">
+	   </form>
+	
+	</div>
+
+		
+
+
+
+</body> 
+
+</html>
